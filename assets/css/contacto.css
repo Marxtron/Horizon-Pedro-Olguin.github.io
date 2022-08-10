@@ -1,0 +1,373 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B2840;
+}
+body .contenedor {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "cab cab cab" "nav nav nav" "pri pri pri" "pie pie pie";
+}
+body .contenedor .header {
+  background-color: #132F70;
+  height: 100px;
+  grid-area: cab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contenedor .header img {
+  max-height: 90px;
+  max-width: 225px;
+  justify-content: center;
+}
+body .contenedor .nav {
+  height: 70px;
+  grid-area: nav;
+  background-color: #296090;
+}
+body .contenedor .nav .ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+body .contenedor .nav .ul a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+body .contenedor .main {
+  align-items: center;
+  grid-area: pri;
+  width: 100%;
+  height: auto;
+}
+body .contenedor .main .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 1000px;
+}
+body .contenedor .main .form .p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-size: 30px;
+}
+body .contenedor .main .form .F {
+  width: 80%;
+  height: 100%;
+}
+body .contenedor .main .form .F .cont {
+  margin-bottom: 30px;
+}
+body .contenedor .main .form .F .cont input {
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  border: 0;
+  border-bottom: #132F70 solid 2px;
+}
+body .contenedor .main .form .F .cont label {
+  margin: 10px;
+  font-size: 20px;
+}
+body .contenedor .main .form .F .cont select {
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  size: 20px;
+}
+body .contenedor .main .form .F .checkbox {
+  margin: 10px;
+  padding: 15px;
+}
+body .contenedor .main .form .F .checkbox label {
+  margin: 10px;
+  font-size: 20px;
+}
+body .contenedor .main .form .F .btn {
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 12px;
+}
+body .contenedor .footer {
+  display: flex;
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  grid-area: pie;
+}
+body .contenedor .footer h3 {
+  color: white;
+  font-size: 30px;
+}
+body .contenedor .footer img {
+  height: 30px;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: #0B2840;
+  }
+  body .contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "cab cab cab" "nav nav nav" "pri pri pri" "pie pie pie";
+  }
+  body .contenedor .header {
+    background-color: #132F70;
+    height: 100px;
+    grid-area: cab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contenedor .header img {
+    max-height: 90px;
+    max-width: 225px;
+    justify-content: center;
+  }
+  body .contenedor .nav {
+    height: auto;
+    grid-area: nav;
+    background-color: #0B2840;
+  }
+  body .contenedor .nav .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    list-style: none;
+    height: 100%;
+  }
+  body .contenedor .nav .ul li {
+    padding: 5px;
+    margin: 3px;
+    background-color: #296090;
+    width: 80%;
+    border-radius: 10px;
+  }
+  body .contenedor .nav .ul li a {
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  body .contenedor .main {
+    align-items: center;
+    grid-area: pri;
+    width: 100%;
+    height: auto;
+  }
+  body .contenedor .main .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 1100px;
+  }
+  body .contenedor .main .form .p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 30px;
+  }
+  body .contenedor .main .form .F {
+    width: 80%;
+    height: 100%;
+  }
+  body .contenedor .main .form .F .cont {
+    margin-bottom: 30px;
+  }
+  body .contenedor .main .form .F .cont input {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: #132F70 solid 2px;
+  }
+  body .contenedor .main .form .F .cont label {
+    margin: 10px;
+    font-size: 20px;
+  }
+  body .contenedor .main .form .F .cont select {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    size: 20px;
+  }
+  body .contenedor .main .form .F .checkbox {
+    margin: 10px;
+    padding: 15px;
+  }
+  body .contenedor .main .form .F .checkbox label {
+    margin: 10px;
+    font-size: 20px;
+  }
+  body .contenedor .main .form .F .btn {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 12px;
+  }
+  body .contenedor .footer {
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    grid-area: pie;
+  }
+  body .contenedor .footer h3 {
+    color: white;
+    font-size: 30px;
+  }
+  body .contenedor .footer img {
+    height: 30px;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    background-color: #0B2840;
+  }
+  body .contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "cab cab cab" "nav nav nav" "pri pri pri" "pie pie pie";
+  }
+  body .contenedor .header {
+    background-color: #132F70;
+    height: 100px;
+    grid-area: cab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contenedor .header img {
+    max-height: 90px;
+    max-width: 225px;
+    justify-content: center;
+  }
+  body .contenedor .nav {
+    height: auto;
+    grid-area: nav;
+    background-color: #0B2840;
+  }
+  body .contenedor .nav .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    list-style: none;
+    height: 100%;
+  }
+  body .contenedor .nav .ul li {
+    padding: 5px;
+    margin: 3px;
+    background-color: #296090;
+    width: 80%;
+    border-radius: 10px;
+  }
+  body .contenedor .nav .ul li a {
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  body .contenedor .main {
+    align-items: center;
+    grid-area: pri;
+    width: 100%;
+    height: auto;
+  }
+  body .contenedor .main .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 1300px;
+  }
+  body .contenedor .main .form .p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 30px;
+  }
+  body .contenedor .main .form .F {
+    width: 80%;
+    height: 100%;
+  }
+  body .contenedor .main .form .F .cont {
+    margin-bottom: 30px;
+  }
+  body .contenedor .main .form .F .cont input {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: #132F70 solid 2px;
+  }
+  body .contenedor .main .form .F .cont label {
+    margin: 10px;
+    font-size: 20px;
+  }
+  body .contenedor .main .form .F .cont select {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    size: 20px;
+  }
+  body .contenedor .main .form .F .checkbox {
+    margin: 10px;
+    padding: 15px;
+  }
+  body .contenedor .main .form .F .checkbox label {
+    margin: 10px;
+    font-size: 20px;
+  }
+  body .contenedor .main .form .F .btn {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 12px;
+  }
+  body .contenedor .footer {
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    grid-area: pie;
+  }
+  body .contenedor .footer h3 {
+    color: white;
+    font-size: 30px;
+  }
+  body .contenedor .footer img {
+    height: 30px;
+  }
+}/*# sourceMappingURL=contacto.css.map */
